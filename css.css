@@ -1,0 +1,58 @@
+/* please note that some of my spacing (apparently) looks weird to the reviewers. This is probably because I started
+this projcet on CodePen and then took it offline to Sublime Text. Having said that, the spacing issues that were pointed
+out to me, I can't see */
+
+* {
+  box-sizing: border-box
+}
+
+h2 { /* I have two h2 tags (here and in <style>) because I'm messing around with inheritance ...
+I also did some weird inherited spacing. I wouldn't do this normally, except this project is mostly for learning, right? */
+  color: white;
+  font-size:large;
+  background-color: black;
+  text-align: center;
+  color: red;
+}
+
+div.info {
+  display: flex;
+  display: -webkit-flex;
+}
+
+.content {
+  width: 50%;
+}
+
+.body {
+  font-weight: bold;
+}
+
+.info {
+  display: flex; /*I guess this isn't a thing in CSS 2.1... */
+  width: 100%;
+}
+
+.photo {
+  padding: 10px;
+  width: 50%;
+}
+
+/* I have two footer elements because I was, again, just messing around with inheritance --
+elements have precedence over classes, and I wanted to demonstrate that.
+The code actually has two "footers" a <span>, and a <footer> */
+.footer { /* I actually use this style twice, once on my footer, and once on my span, but what's
+interesting is that because SPAN is an in-line element, the alignment reall has no effect, instead it's
+the <div> that contains the SPAN that controls where the text shows up on the page
+
+...
+
+LEARNING
+
+*/
+	text-align: left;
+}
+
+footer { /* This modifies the <footer>, and takes precedence over the  .footer class> */
+	text-align: center;
+}
